@@ -99,8 +99,37 @@ namespace _Q___set1
           return a % b;
       }
 
-
-
+      public static void Q6()
+      {
+          int value = getinteger("enter the  value to find the square value:");
+          int result = squarevalue(value);
+          Console.WriteLine("the square value of the given number is:"+result);
+      }
+        public static int squarevalue(int a)
+        {
+            return a * a;
+        }
+        public static void Q7()
+        {
+            int value = getinteger("enter the value to find the square root value :");
+            double result = squarerootvalue(value);
+            Console.WriteLine("the square root value of the given number is :"+result);
+        }
+        public static double squarerootvalue(int num)
+        {
+            return(Math.Sqrt(num));
+        }
+        public static void Q8()
+        {
+            double breadth = getdouble("enter the value for breadth");
+            double heigth = getdouble("enter the value for heigth");
+            double result = AreaOfTriangle(breadth, heigth);
+            Console.WriteLine("the area of the triangle is :"+result);
+        }
+        public static double AreaOfTriangle(double b, double h)
+        {
+            return (1 / 2.0 * (b * h));
+        }
     }
 }
 
